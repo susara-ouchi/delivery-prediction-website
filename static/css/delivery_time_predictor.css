@@ -1,0 +1,115 @@
+.blog-page {
+    background: linear-gradient(rgba(245, 244, 247, 0.8), white),
+        url('/static/img/bg1.jpg') center center fixed;
+    backdrop-filter: blur(5px);
+    animation: gradientAnimation 10s infinite alternate;
+    /* Adjust the duration as needed */
+
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.form_predictor {
+    max-width: 100%;
+    /* Adjust the width as needed */
+    margin: auto;
+    padding: 30px 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+/* Styling for form groups */
+.form-group {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Styling for labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #0d0d0d;
+    font-size: medium;
+}
+
+/* Styling for input fields */
+.form-pred {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.pred-btn {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    padding: 20px 60px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-color: #ddd;
+    box-shadow: 0 0 20px #fffefe;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.pred-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+/* Styling for select dropdown */
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.button-section {
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+
+
+
+/*prediction box*/
+.prediction-box {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+}
+
+#predictionOutput {
+    font-size: 18px;
+    color: #333;
+}

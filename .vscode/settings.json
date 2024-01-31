@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/6c3ae1a6-9fce-46f0-bf6e-9974f57d8599/resourceGroups/rg-FoodDeliveryTimePrediction/providers/Microsoft.Web/sites/FoodDeliveryTimePrediction-G6",
+    "appService.deploySubpath": "."
+}

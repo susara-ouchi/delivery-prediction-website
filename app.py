@@ -7,7 +7,6 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-
 @app.route('/about')
 def about():
     return render_template('about.html')
@@ -23,8 +22,6 @@ def delivery():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
-
-
 
 model = pickle.load(open('model.pkl','rb'))
 
@@ -59,8 +56,7 @@ def process_form():
         ratings,
         traffic_density_value,
         vehicle_condition_value,
-        deliveries_value,
-        
+        deliveries_value,   
     ])
 
     # Handle nominal variables (dummy variables)
@@ -88,9 +84,6 @@ def process_form():
 
     # Return the prediction result to the user
     return render_template('delivery.html', prediction_result="{}".format(formatted_time))
-
-
-
 
 if __name__ == "__main__":
     app.run(debug =True)
